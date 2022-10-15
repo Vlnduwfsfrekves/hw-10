@@ -1,0 +1,224 @@
+:root{
+    --accent-color:#2196F3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --thirdly-text-color: #FFFFFF;
+    --background-color: #2F303A;
+}
+/* Загальні стилі */
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Головна сторінка */
+.section{
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 1px solid black;
+}
+
+.container{
+    outline: 1px solid red;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Хедер */
+.section.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.hero-button{
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--thirdly-text-color);
+    font-weight:700 ;
+    font-size:16px ;
+    line-height:30px;
+    border-radius: 4px;
+    padding: 10px 24px;
+    cursor: pointer;
+    /* transition-property: background-color;
+    transition-duration:250ms ;
+    transition-timing-function:cubic-bezier(0.4,0,0.2,1) ;
+    transition-delay: 1000ms ; */
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.container.nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+.logo span{
+    color: var(--accent-color);
+}
+
+nav{
+    margin-left: 93px;
+}
+
+.nav-list{
+    display: flex;
+}
+.nav-item:not(:first-child){
+    margin-left: 54px;
+}
+/* .nav-item:first-child{
+    margin-left: 0;
+} */
+.nav-link,
+.contact-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--accent-color);
+}
+
+.contacts-list{
+    display: flex;
+    margin-left: auto;
+}
+.contact-item:not(:first-child){
+    margin-left: 50px;
+}
+/* .contact-item:nth-child(2){
+    margin-left: 50px;
+} */
+.contact-link{
+    color: var(--secondary-text-color);
+}
+
+/* Секція герой */
+.section.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section.hero,
+.section.footer{
+    background-color: var(--background-color);
+}
+.hero-title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--thirdly-text-color);
+}
+/* Section Features */
+.fetures{
+    display: flex;
+    justify-content: space-between;
+}
+/* Футер */
+.section.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    right: 30px;
+}
+.control2{
+    display: flex;
+    justify-content: space-between;
+    right: 30px;
+}
+.text-2{
+    display: flex;
+    justify-content: center;
+}
+.contact-item::before{
+    background-image: url(./Vector.svg);
+}
+.lol{
+    display: flex;
+    align-items: baseline;
+}
+.lol-item2{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.lol-item3{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.lol-item4:hover,
+.lol-item4:focus{
+    background-color: #2196F3;
+}
+.hero-button:hover,
+.hero-button:focus{
+    background-color: aquamarine;
+    color: #2F3034;
+}
+.ttt{
+    display: flex;
+    justify-content: center;
+}
+/* Потрфоліо  */
+
+.filter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-item:not(:last-child){
+    margin-right: 8px;
+}
